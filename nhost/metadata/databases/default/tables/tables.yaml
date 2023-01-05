@@ -8,6 +8,5 @@
 - "!include auth_users.yaml"
 - "!include public_tag.yaml"
 - "!include public_trip.yaml"
-- "!include public_trip_tag.yaml"
 - "!include storage_buckets.yaml"
 - "!include storage_files.yaml"
