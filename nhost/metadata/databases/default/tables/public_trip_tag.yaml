@@ -23,3 +23,7 @@ update_permissions:
         - trip_id
       filter: {}
       check: {}
+delete_permissions:
+  - role: public
+    permission:
+      filter: {}
