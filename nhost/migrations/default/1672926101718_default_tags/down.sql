@@ -1,0 +1,6 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- INSERT INTO tag VALUES ('FAMILY') ON CONFLICT DO NOTHING;
+-- INSERT INTO tag VALUES ('FOOD') ON CONFLICT DO NOTHING;
+-- INSERT INTO tag VALUES ('WINE') ON CONFLICT DO NOTHING;
+-- INSERT INTO tag VALUES ('WEEKEND') ON CONFLICT DO NOTHING;
