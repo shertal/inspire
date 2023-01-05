@@ -1,0 +1,1 @@
+CREATE TABLE "public"."trip_tag" ("trip_id" Text NOT NULL, "tag_id" Text NOT NULL, PRIMARY KEY ("trip_id","tag_id") , FOREIGN KEY ("trip_id") REFERENCES "public"."trip"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("tag_id") REFERENCES "public"."tag"("id") ON UPDATE restrict ON DELETE restrict);
