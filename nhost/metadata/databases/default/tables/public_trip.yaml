@@ -1,6 +1,22 @@
 table:
   name: trip
   schema: public
+array_relationships:
+  - name: tags
+    using:
+      foreign_key_constraint_on:
+        column: trip
+        table:
+          name: trip_tag
+          schema: public
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - recipe
+        - headline
+        - id
 select_permissions:
   - role: public
     permission:
@@ -9,3 +25,12 @@ select_permissions:
         - headline
         - recipe
       filter: {}
+update_permissions:
+  - role: public
+    permission:
+      columns:
+        - recipe
+        - headline
+        - id
+      filter: {}
+      check: {}

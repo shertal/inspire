@@ -1,0 +1,25 @@
+table:
+  name: trip_tag
+  schema: public
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - tag
+        - trip
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - trip
+        - tag
+      filter: {}
+update_permissions:
+  - role: public
+    permission:
+      columns:
+        - tag
+        - trip
+      filter: {}
+      check: {}
