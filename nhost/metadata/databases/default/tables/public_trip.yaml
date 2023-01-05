@@ -7,4 +7,5 @@ select_permissions:
       columns:
         - id
         - headline
+        - recipe
       filter: {}
